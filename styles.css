@@ -1,5 +1,6 @@
 .menu{
     display: flex;
     justify-content: space-evenly;
-    background-color: black;
+    background-color: rgb(255, 255, 255);
+    filter: invert(100%) saturate(1%);
 }
