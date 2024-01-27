@@ -1,6 +1,21 @@
+body{
+    filter: invert(100%) saturate(1%);
+    margin-top: 1%;
+}
+
+.content{
+    display: flex;
+    background-color: rgb(255, 255, 255);
+}
+
 .menu{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: start;
+    flex-direction: column;
+    gap: 55px;
     background-color: rgb(255, 255, 255);
-    filter: invert(100%) saturate(1%);
+}
+
+.vids{
+    display: flex;
 }
