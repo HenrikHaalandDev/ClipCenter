@@ -19,3 +19,8 @@ body{
 .vids{
     display: flex;
 }
+
+.button{
+    border: none;
+    background-color: white;
+}
