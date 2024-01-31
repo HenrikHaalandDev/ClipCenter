@@ -1,0 +1,2 @@
+Frontend: JavaScript
+Backend: PHP + SQL

@@ -1,6 +1,6 @@
 body{
-    filter: invert(100%) saturate(1%);
-    margin-top: 1%;
+    background-color: black;
+    overflow: hidden;
 }
 
 .content{
@@ -9,6 +9,7 @@ body{
 }
 
 .menu{
+    filter: invert(100%) saturate(1%);
     display: flex;
     justify-content: start;
     flex-direction: column;
@@ -17,7 +18,17 @@ body{
 }
 
 .vids{
+    background-color: black;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 70vh;
+    width: 70vw;
+}
+
+.video {
+    max-width: 150vw;
+    max-height: 150vh;
 }
 
 .button{
