@@ -1,5 +1,13 @@
+let autoplay = "true"
 
-const videoPlayer = document.getElementById("video-player");
+function toggleAutoplay () {
+  // switches autoplay to true/false
+  // autoplay function must recognize change in autplay value
+}
+
+
+
+const videoPlayer = document.querySelector(".video")
 const switchBtn = document.getElementById("switch-btn");
 const sources = [
   { src: "videos/1.mp4", id: "video-1" },
@@ -29,4 +37,12 @@ function switchVideo() {
   videoPlayer.id = newSource.id;
   videoPlayer.load();
   videoPlayer.play();
+}
+
+// setInterval(switchVideo, 10000)
+if (autoplay === "true") {
+  videoPlayer.addEventListener("ended", function() {
+    console.log ("vid ended")
+    switchVideo();
+  });
 }
