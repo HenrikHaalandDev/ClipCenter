@@ -12,6 +12,15 @@ const sources = [
 let currentSourceIndex = 0;
 
 switchBtn.addEventListener("click", switchVideo);
+document.addEventListener("keydown", function(event) {
+  if (event.key === " ") {
+    event.preventDefault();
+    switchVideo();
+  } else if (event.key === "ArrowDown") {
+    event.preventDefault();
+    switchVideo();
+  }
+});
 
 function switchVideo() {
   currentSourceIndex = (currentSourceIndex + 1) % sources.length;
