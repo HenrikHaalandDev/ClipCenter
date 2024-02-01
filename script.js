@@ -13,6 +13,9 @@ const sources = [
   { src: "videos/1.mp4", id: "video-1" },
   { src: "videos/2.mp4", id: "video-2" },
   { src: "videos/3.mp4", id: "video-3" },
+  { src: "videos/4.mp4", id: "video-4" },
+  { src: "videos/5.mp4", id: "video-5" },
+  { src: "videos/6.mp4", id: "video-6" },
   // add more sources as needed
 ];
 
