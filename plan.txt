@@ -1,2 +1,10 @@
 Frontend: JavaScript
 Backend: PHP + SQL
+
+// Backend overordnet plan. Mål: telle antall views totalt på siden.
+1. Installere server-software, XAMPP (Apache).
+2. På servern skal det ligge en database vi lager med MariaDb. Databasen må ha en tall-variabel som lagrer antall views. 
+3. Klare å koble til databasen via JavaScript, med brukernavn, passord og IP-adresse. PHP.
+4. JS-funksjon som henter tall-variabelen fra databasen, lagre denne som en JavaScript-variabel, øker med 1, og lagrer den nye verdien til databasen. SQL.
+
+Sikkerhet: enten lagre server på egen maskin, ellller bruke en virtuell maskin (HyperV). 
