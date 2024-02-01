@@ -39,10 +39,11 @@ function switchVideo() {
   videoPlayer.play();
 }
 
-// setInterval(switchVideo, 10000)
 if (autoplay === "true") {
   videoPlayer.addEventListener("ended", function() {
-    console.log ("vid ended")
+    console.log ("video ended")
     switchVideo();
-  });
+  })
+} else {
+  videoPlayer.loop = true;
 }
