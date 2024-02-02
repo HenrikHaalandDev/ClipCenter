@@ -5,7 +5,6 @@ function toggleAutoplay() {
   videoPlayer.loop = autoplay;
 }
 
-
 const videoPlayer = document.querySelector(".video")
 const switchBtn = document.getElementById("switch-btn");
 const sources = [
@@ -36,7 +35,7 @@ function switchVideo() {
   const newSource = sources[currentSourceIndex];
   videoPlayer.src = newSource.src;
   videoPlayer.id = newSource.id;
-  videoPlayer.load();
+  videoPlayer.load(); // call load() after changing the src attribute
   videoPlayer.play();
 }
 

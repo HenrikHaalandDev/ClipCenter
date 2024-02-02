@@ -38,14 +38,10 @@ body{
     filter: invert(100%) saturate(1%);
 }
 
-.autoscroll{
-    font-weight: 800;
-    font-size: 16px;
-    background-color: red;
+#auto_btn{
     border: none;
-    transition: 0.3s;
-}
-
-.autoscroll:hover{
     color: white;
+    background-color: red;
+    font-weight: 900;
+    font-size: 25px;
 }
