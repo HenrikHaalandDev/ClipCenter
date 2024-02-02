@@ -1,10 +1,9 @@
-let autoplay = "true"
+let autoplay = false;
 
-function toggleAutoplay () {
-  // switches autoplay to true/false
-  // autoplay function must recognize change in autplay value
+function toggleAutoplay() {
+  autoplay = !autoplay;
+  videoPlayer.loop = autoplay;
 }
-
 
 
 const videoPlayer = document.querySelector(".video")
@@ -41,7 +40,7 @@ function switchVideo() {
   videoPlayer.play();
 }
 
-if (autoplay === "true") {
+if (autoplay) {
   videoPlayer.addEventListener("ended", function() {
     console.log ("video ended")
     switchVideo();
