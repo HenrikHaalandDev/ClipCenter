@@ -3,6 +3,7 @@ let autoplay = false;
 function toggleAutoplay() {
   autoplay = !autoplay;
   videoPlayer.loop = autoplay;
+  switchVideo();
 }
 
 const videoPlayer = document.querySelector(".video")
@@ -39,11 +40,11 @@ function switchVideo() {
   videoPlayer.play();
 }
 
-if (autoplay) {
-  videoPlayer.addEventListener("ended", function() {
-    console.log ("video ended")
-    switchVideo();
-  })
-} else {
-  videoPlayer.loop = true;
-}
+  if (autoplay) {
+    videoPlayer.addEventListener("ended", function() {
+      console.log ("video ended")
+      switchVideo();
+    })
+  } else {
+    videoPlayer.loop = true;
+  }
