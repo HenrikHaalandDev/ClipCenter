@@ -3,7 +3,6 @@ let autoplay = false;
 function toggleAutoplay() {
   autoplay = !autoplay;
   videoPlayer.loop = autoplay;
-  switchVideo();
 }
 
 const videoPlayer = document.querySelector(".video")
@@ -46,5 +45,6 @@ function switchVideo() {
       switchVideo();
     })
   } else {
-    videoPlayer.loop = true;
+    // videoPlayer.loop = true;
+    switchVideo();
   }
